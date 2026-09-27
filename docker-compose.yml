@@ -41,7 +41,7 @@ services:
     depends_on:
       stats-db:
         condition: service_healthy
-      discorvery-server:
+      discovery-server:
         condition: service_started
       config-server:
         condition: service_started
@@ -61,7 +61,7 @@ services:
         condition: service_healthy
       stats-server:
         condition: service_started
-      discorvery-server:
+      discovery-server:
         condition: service_started
       config-server:
         condition: service_started
